@@ -2,6 +2,8 @@
 
 This repository accompanies a technical experience report about reconstructing, in DaVinci Resolve, a timeline produced by an external application.
 
+**Full technical report:** [RETEX_DaVinci_TextPlus_EN.pdf](RETEX_DaVinci_TextPlus_EN.pdf)
+
 The original use case is **Icare Motion Studio (IMS)**, an in-house automated video-editing application built around Remotion Studio. The complete IMS bridge is not published here; this repository isolates the mechanisms that may be reusable elsewhere.
 
 ## Native editable Text+: the core mechanism
@@ -12,7 +14,7 @@ The validated sequence is:
 
 A **carrier** is the term used here for a temporary placeholder clip. It defines the target start position and duration; it is not a DaVinci Resolve API object or official term.
 
-`textplus_example.py` is a minimal extract derived from the validated IMS V10 implementation. It shows how to:
+[`textplus_example.py`](textplus_example.py) is a minimal extract derived from the validated IMS V10 implementation. It shows how to:
 
 1. read timing and TextPlus parameters from a carrier;
 2. remove the carrier;
